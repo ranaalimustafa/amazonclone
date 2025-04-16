@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+            
+            border: 10px solid rgb(154, 46, 143);
+            height: 300px;
+            width: 300px;
+           display: flex;
+           align-items: center;
+           flex-wrap: wrap;
+           justify-content: center;
+            
+        }
+        input{
+           height: 40px;
+           width: 200px;
+           color: white;
+           background: transparent;
+           border: 8px white solid;
+           border-radius: 7px;
+        }
+        
+        .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adjust this value to control spacing */
+}
+body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none; /* Prevent interaction */
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+            top: 40%;
+        }
+
+        iframe {
+            width: 100vw;
+            height: 56.25vw; /* Maintain 16:9 aspect ratio */
+            min-height: 100vh;
+            min-width: 177.77vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .plh{
+            color: white;
+            font-size: 1.2rem;
+        }
+        .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .btn:hover {
+    background-color: darkblue;
+  }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <iframe 
+            src="https://www.youtube.com/embed/tnOx9hGZ-2U?autoplay=1&mute=1&loop=1&playlist=tnOx9hGZ-2U&controls=0&showinfo=0&modestbranding=1"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    
+    <div class="form input-container">
+        <input type="text" class="plh" placeholder="User name">
+        <br>
+        <input type="text" class="plh"  placeholder="password">
+        <br>
+        <a href="/index.html" target="_blank" class="btn">login</a>
+
+
+
+    </div>
+</body>
+</html>
